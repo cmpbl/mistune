@@ -113,7 +113,7 @@ class BlockGrammar(object):
         r'\1 *(?:\n+|$)'  # ```
     )
     hrule = re.compile(r'^ {0,3}[-*_](?: *[-*_]){2,} *(?:\n+|$)')
-    heading = re.compile(r'^ *(#{1,6}) *([^\n]+?) *#* *(?:\n+|$)')
+    heading = re.compile(r'^ *(#{1,6}) +([^\n]+?) *#* *(?:\n+|$)')
     lheading = re.compile(r'^([^\n]+)\n *(=|-)+ *(?:\n+|$)')
     block_quote = re.compile(r'^( *>[^\n]+(\n[^\n]+)*\n*)+')
     list_block = re.compile(
